@@ -7,11 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Best-approach</title>
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <!-- animation css  -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@700&amp;family=Rokkitt&amp;display=swap"
+        rel="stylesheet">
 </head>
 
-<body>
+<body style="background-color: rgb(17, 24, 39);">
     <!-- NAVBAR -->
-    <header class="text-gray-400 bg-gray-900 body-font">
+    <header data-aos="fade-down" class="text-gray-400 bg-gray-900 body-font">
         <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
             <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round"
@@ -22,15 +26,16 @@
                 <span class="ml-3 text-xl">Tailblocks</span>
             </a>
             <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-                <!-- changes -->
-                <a class="mr-5 hover:text-white ">First Link</a>
-                <a class="mr-5 hover:text-white">Second Link</a>
-                <a class="mr-5 hover:text-white">Third Link</a>
-                <a class="mr-5 hover:text-white">Fourth Link</a>
+                <!-- changes done-->
+                <a class="mr-5 hover:text-white text-white" href="#">Home</a>
+                <a class="mr-5 hover:text-white" href="#about">About</a>
+                <a class="mr-5 hover:text-white" href="#resources">Resources</a>
+                <a class="mr-5 hover:text-white" href="#services">Services</a>
+                <a class="mr-5 hover:text-white" href="#footer">Contact Us</a>
             </nav>
             <div class="flex md:flex-nowrap flex-wrap justify-center items-end md:justify-start">
-                <!-- changes w48-issue -->
-                <div class="relative sm:w-64 w-40 sm:mr-4 mr-2">
+                <!-- changes w48-issue {fixed} -->
+                <div class="relative sm:w-48 w-40 sm:mr-4 mr-2">
                     <input type="text" id="footer-field" name="footer-field"
                         class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:ring-2 focus:ring-green-900 focus:bg-transparent focus:border-green-500 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                         placeholder="Type here">
@@ -44,22 +49,26 @@
     <!-- HERO -->
     <section class="text-gray-400 bg-gray-900 body-font">
         <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-            <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 md:mb-0 mb-10">
-                <img class="object-cover object-center rounded" alt="hero" src="https://dummyimage.com/720x600">
+            <div data-aos="fade-right" class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 md:mb-0 mb-10">
+                <img class="object-cover object-center rounded" alt="hero"
+                    src="https://source.unsplash.com/500x500/?physics,ramanujan">
             </div>
-            <div
+            <div data-aos="fade-left"
                 class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-                <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">Before they sold out
-                    <br class="hidden lg:inline-block">readymade gluten
+                <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">The study of the
+                    <br class="hidden lg:inline-block">universal truth
                 </h1>
-                <p class="mb-8 leading-relaxed">Copper mug try-hard pitchfork pour-over freegan heirloom neutra air
-                    plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken
-                    authentic tumeric truffaut hexagon try-hard chambray.</p>
+                <p class="mb-8 leading-relaxed">Mathematics is a methodical application of matter. ... Mathematics makes
+                    our life orderly and prevents chaos. Certain qualities that are nurtured by mathematics are power of
+                    reasoning, creativity, abstract or spatial thinking, critical thinking, problem-solving ability and
+                    even effective communication skills.</p>
                 <div class="flex justify-center">
                     <button
-                        class="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">Button</button>
+                        class="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg"><a
+                            href="https://unacademy.in">Study</a></button>
                     <button
-                        class="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">Button</button>
+                        class="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg"><a
+                            href="https://www.youtube.com/c/BestApproach">Subscribe</a></button>
                 </div>
             </div>
         </div>
@@ -69,8 +78,11 @@
     <section class="text-gray-400 body-font bg-gray-900">
         <div class="container px-5 py-24 mx-auto">
             <div class="flex flex-col text-center w-full mb-20">
-                <h2 class="text-xs text-green-400 tracking-widest font-medium title-font mb-1">ROOF PARTY POLAROID</h2>
-                <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">Master Cleanse Reliac Heirloom
+                <h2 class="text-xs text-green-400 tracking-widest font-medium title-font mb-1">OPEN SOURCE DEVELOPMENT
+                </h2>
+                <h1 style="font-family: 'Jura', sans-serif;"
+                    class="sm:text-3xl text-5xl font-medium title-font mb-4 text-white"> We all are the contributer for
+                    own future, so <br> why not make a better future and earth a <br> better place for living !
                 </h1>
             </div>
         </div>
@@ -80,39 +92,39 @@
     <section class="text-gray-400 bg-gray-900 body-font">
         <div class="container px-5 py-24 mx-auto flex flex-wrap">
             <div class="flex w-full mb-20 flex-wrap">
-                <h1 class="sm:text-3xl text-2xl font-medium title-font text-white lg:w-1/3 lg:mb-0 mb-4">Master Cleanse
-                    Reliac Heirloom</h1>
-                <p class="lg:pl-6 lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon
-                    brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard
-                    of them man bun deep jianbing selfies heirloom.</p>
+                <h1 class="sm:text-3xl text-2xl font-medium title-font text-white lg:w-1/3 lg:mb-0 mb-4">Some Historical
+                    images</h1>
+                <p class="lg:pl-6 lg:w-2/3 mx-auto leading-relaxed text-base">The area of study known as the history of
+                    mathematics is primarily an investigation into the origin of discoveries in mathematics and, to a
+                    lesser extent, an investigation into the mathematical methods and notation of the past.</p>
             </div>
             <div class="flex flex-wrap md:-m-2 -m-1">
                 <div class="flex flex-wrap w-1/2">
-                    <div class="md:p-2 p-1 w-1/2">
+                    <div data-aos="fade-right" class="md:p-2 p-1 w-1/2">
                         <img alt="gallery" class="w-full object-cover h-full object-center block"
-                            src="https://dummyimage.com/500x300">
+                            src="https://source.unsplash.com/500x300/?ellipse,parabola">
                     </div>
-                    <div class="md:p-2 p-1 w-1/2">
+                    <div data-aos="fade-down" class="md:p-2 p-1 w-1/2">
                         <img alt="gallery" class="w-full object-cover h-full object-center block"
-                            src="https://dummyimage.com/501x301">
+                            src="https://source.unsplash.com/501x301/?pyramid,sun">
                     </div>
-                    <div class="md:p-2 p-1 w-full">
+                    <div data-aos="fade-up" class="md:p-2 p-1 w-full">
                         <img alt="gallery" class="w-full h-full object-cover object-center block"
-                            src="https://dummyimage.com/600x360">
+                            src="https://source.unsplash.com/600x360/?book,old">
                     </div>
                 </div>
                 <div class="flex flex-wrap w-1/2">
-                    <div class="md:p-2 p-1 w-full">
+                    <div data-aos="fade-down" class="md:p-2 p-1 w-full">
                         <img alt="gallery" class="w-full h-full object-cover object-center block"
-                            src="https://dummyimage.com/601x361">
+                            src="https://source.unsplash.com/601x361/?waves,sound">
                     </div>
-                    <div class="md:p-2 p-1 w-1/2">
+                    <div data-aos="fade-up" class="md:p-2 p-1 w-1/2">
                         <img alt="gallery" class="w-full object-cover h-full object-center block"
-                            src="https://dummyimage.com/502x302">
+                            src="https://source.unsplash.com/502x302/?string,pulley">
                     </div>
-                    <div class="md:p-2 p-1 w-1/2">
+                    <div data-aos="fade-left" class="md:p-2 p-1 w-1/2">
                         <img alt="gallery" class="w-full object-cover h-full object-center block"
-                            src="https://dummyimage.com/503x303">
+                            src="https://source.unsplash.com/503x303/?physics,ramanujan">
                     </div>
                 </div>
             </div>
@@ -122,7 +134,8 @@
     <!-- PHYSICS CHEMISTRY MATHS -->
     <section class="text-gray-400 bg-gray-900 body-font">
         <div class="container px-5 py-24 mx-auto">
-            <div class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-800 sm:flex-row flex-col">
+            <div data-aos="fade-right"
+                class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-800 sm:flex-row flex-col">
                 <div
                     class="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full text-green-400 bg-gray-800 flex-shrink-0">
                     <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -131,9 +144,10 @@
                     </svg>
                 </div>
                 <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
-                    <h2 class="text-white text-lg title-font font-medium mb-2">Shooting Stars</h2>
-                    <p class="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan
-                        taxidermy. Gastropub indxgo juice poutine.</p>
+                    <h2 class="text-white text-lg title-font font-medium mb-2">Physics</h2>
+                    <p class="leading-relaxed text-base">Physics is the natural science that studies matter, its
+                        fundamental constituents, its motion and behavior through space and time, and the related
+                        entities of energy and force. </p>
                     <a class="mt-3 text-green-400 inline-flex items-center">Learn More
                         <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                             stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
@@ -142,11 +156,12 @@
                     </a>
                 </div>
             </div>
-            <div class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-800 sm:flex-row flex-col">
+            <div data-aos="fade-left"
+                class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-800 sm:flex-row flex-col">
                 <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
-                    <h2 class="text-white text-lg title-font font-medium mb-2">The Catalyzer</h2>
-                    <p class="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan
-                        taxidermy. Gastropub indxgo juice poutine.</p>
+                    <h2 class="text-white text-lg title-font font-medium mb-2">Chemistry</h2>
+                    <p class="leading-relaxed text-base">Chemistry is the scientific study of the properties and
+                        behavior of matter. Also it is a hell like thing...</p>
                     <a class="mt-3 text-green-400 inline-flex items-center">Learn More
                         <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                             stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
@@ -164,7 +179,7 @@
                     </svg>
                 </div>
             </div>
-            <div class="flex items-center lg:w-3/5 mx-auto sm:flex-row flex-col">
+            <div data-aos="fade-right" class="flex items-center lg:w-3/5 mx-auto sm:flex-row flex-col">
                 <div
                     class="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full text-green-400 bg-gray-800 flex-shrink-0">
                     <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -174,9 +189,9 @@
                     </svg>
                 </div>
                 <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
-                    <h2 class="text-white text-lg title-font font-medium mb-2">The 400 Blows</h2>
-                    <p class="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan
-                        taxidermy. Gastropub indxgo juice poutine.</p>
+                    <h2 class="text-white text-lg title-font font-medium mb-2">Mathematics</h2>
+                    <p class="leading-relaxed text-base">Mathematics, the science of structure, order, and relation that
+                        has evolved from counting, measuring, and describing the shapes of objects.</p>
                     <a class="mt-3 text-green-400 inline-flex items-center">Learn More
                         <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                             stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
@@ -185,13 +200,13 @@
                     </a>
                 </div>
             </div>
-            <button
+            <button data-aos="zoom-in"
                 class="flex mx-auto mt-20 text-white bg-green-500 border-0 py-2 px-8 focus:outline-none hover:bg-green-600 rounded text-lg">Button</button>
         </div>
     </section>
 
-    <!-- ISSUES TO FIX -->
-    <section class="text-gray-400 bg-gray-900 body-font">
+    <!-- ISSUES TO FIX  - FIXED SO COMMENTED OUT-->
+    <!-- <section class="text-gray-400 bg-gray-900 body-font">
         <div class="container px-5 py-24 mx-auto">
             <div class="text-center mb-20">
                 <h1 class="sm:text-3xl text-2xl font-medium text-center title-font text-white mb-4">Raw Denim Heirloom
@@ -265,10 +280,10 @@
             <button
                 class="flex mx-auto mt-16 text-white bg-green-500 border-0 py-2 px-8 focus:outline-none hover:bg-green-600 rounded text-lg">Button</button>
         </div>
-    </section>
+    </section> -->
 
     <!-- HOW TO HERO -->
-    <section class="text-gray-400 bg-gray-900 body-font">
+    <section data-aos="fade-up" class="text-gray-400 bg-gray-900 body-font">
         <div class="container px-5 py-24 mx-auto flex flex-wrap">
             <div class="flex flex-wrap w-full">
                 <div class="lg:w-2/5 md:w-1/2 md:pr-10 md:py-6">
@@ -285,8 +300,7 @@
                         </div>
                         <div class="flex-grow pl-4">
                             <h2 class="font-medium title-font text-sm text-white mb-1 tracking-wider">STEP 1</h2>
-                            <p class="leading-relaxed">VHS cornhole pop-up, try-hard 8-bit iceland helvetica. Kinfolk
-                                bespoke try-hard cliche palo santo offal.</p>
+                            <p class="leading-relaxed">First Draw map for your destination and design your path!</p>
                         </div>
                     </div>
                     <div class="flex relative pb-12">
@@ -302,8 +316,7 @@
                         </div>
                         <div class="flex-grow pl-4">
                             <h2 class="font-medium title-font text-sm text-white mb-1 tracking-wider">STEP 2</h2>
-                            <p class="leading-relaxed">Vice migas literally kitsch +1 pok pok. Truffaut hot chicken
-                                slow-carb health goth, vape typewriter.</p>
+                            <p class="leading-relaxed">Focus: Sharpen your knife & Directness: Go straight ahead</p>
                         </div>
                     </div>
                     <div class="flex relative pb-12">
@@ -320,8 +333,7 @@
                         </div>
                         <div class="flex-grow pl-4">
                             <h2 class="font-medium title-font text-sm text-white mb-1 tracking-wider">STEP 3</h2>
-                            <p class="leading-relaxed">Coloring book nar whal glossier master cleanse umami. Salvia +1
-                                master cleanse blog taiyaki.</p>
+                            <p class="leading-relaxed">Drill: Attack your weakest point</p>
                         </div>
                     </div>
                     <div class="flex relative pb-12">
@@ -338,8 +350,7 @@
                         </div>
                         <div class="flex-grow pl-4">
                             <h2 class="font-medium title-font text-sm text-white mb-1 tracking-wider">STEP 4</h2>
-                            <p class="leading-relaxed">VHS cornhole pop-up, try-hard 8-bit iceland helvetica. Kinfolk
-                                bespoke try-hard cliche palo santo offal.</p>
+                            <p class="leading-relaxed">Retrival: Test to learn</p>
                         </div>
                     </div>
                     <div class="flex relative">
@@ -352,22 +363,22 @@
                             </svg>
                         </div>
                         <div class="flex-grow pl-4">
-                            <h2 class="font-medium title-font text-sm text-white mb-1 tracking-wider">FINISH</h2>
-                            <p class="leading-relaxed">Pitchfork ugh tattooed scenester echo park gastropub whatever
-                                cold-pressed retro.</p>
+                            <h2 class="font-medium title-font text-sm text-white mb-1 tracking-wider">FEEDBACK</h2>
+                            <p class="leading-relaxed">Don't fill a leaky bucket & Don't dodge punches as well as dig
+                                deep n explore outside your comfort zone!</p>
                         </div>
                     </div>
                 </div>
                 <img class="lg:w-3/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12"
-                    src="https://dummyimage.com/1200x500" alt="step">
+                    src="https://source.unsplash.com/1200x500/?book,old" alt="step">
             </div>
         </div>
     </section>
 
     <!-- SLOGAN - DUO -->
-    <section class="text-gray-400 bg-gray-900 body-font">
+    <section data-aos="fade-up" class="text-gray-400 bg-gray-900 body-font">
         <div class="container px-5 py-24 mx-auto">
-            <h1 class="text-3xl font-medium title-font text-white mb-12 text-center">Testimonials</h1>
+            <h1 class="text-3xl font-medium title-font text-white mb-12 text-center">SLOGANS</h1>
             <div class="flex flex-wrap -m-4">
                 <div class="p-4 md:w-1/2 w-full">
                     <div class="h-full bg-gray-800 bg-opacity-40 p-8 rounded">
@@ -377,15 +388,16 @@
                                 d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z">
                             </path>
                         </svg>
-                        <p class="leading-relaxed mb-6">Synth chartreuse iPhone lomo cray raw denim brunch everyday
-                            carry neutra before they sold out fixie 90's microdosing. Tacos pinterest fanny pack venmo,
-                            post-ironic heirloom try-hard pabst authentic iceland.</p>
+                        <p class="leading-relaxed mb-6">I do not think there is any thrill that can go through the
+                            human heart like that felt by the inventor as he sees some creation of the brain unfolding
+                            to success . . . Such emotions make a man forget food, sleep, friends, love, everything.
+                        </p>
                         <a class="inline-flex items-center">
-                            <img alt="testimonial" src="https://dummyimage.com/106x106"
+                            <img alt="testimonial" src="https://source.unsplash.com/106x106/?book,tesla"
                                 class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
                             <span class="flex-grow flex flex-col pl-4">
-                                <span class="title-font font-medium text-white">Holden Caulfield</span>
-                                <span class="text-gray-500 text-sm">UI DEVELOPER</span>
+                                <span class="title-font font-medium text-white">Nikola Tesla</span>
+                                <span class="text-gray-500 text-sm">INVENTOR</span>
                             </span>
                         </a>
                     </div>
@@ -398,15 +410,16 @@
                                 d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z">
                             </path>
                         </svg>
-                        <p class="leading-relaxed mb-6">Synth chartreuse iPhone lomo cray raw denim brunch everyday
-                            carry neutra before they sold out fixie 90's microdosing. Tacos pinterest fanny pack venmo,
-                            post-ironic heirloom try-hard pabst authentic iceland.</p>
+                        <p class="leading-relaxed mb-6">Don't just teach your children how to be successful, teach them
+                            how to respond when they are not successful, teach them how to handle failures and learn
+                            from their mistakes. It's not the lack of intelligence, it's the lack of focus that is
+                            stopping you.</p>
                         <a class="inline-flex items-center">
-                            <img alt="testimonial" src="https://dummyimage.com/107x107"
+                            <img alt="testimonial" src="https://source.unsplash.com/107x107/?physics,feynman"
                                 class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
                             <span class="flex-grow flex flex-col pl-4">
-                                <span class="title-font font-medium text-white">Alper Kamu</span>
-                                <span class="text-gray-500 text-sm">DESIGNER</span>
+                                <span class="title-font font-medium text-white">Richard P. Feynman</span>
+                                <span class="text-gray-500 text-sm">PHYSICIST</span>
                             </span>
                         </a>
                     </div>
@@ -415,7 +428,7 @@
         </div>
     </section>
     <!-- SLOGAN SOLO -->
-    <section class="text-gray-400 bg-gray-900 body-font">
+    <section data-aos="fade-up" class="text-gray-400 bg-gray-900 body-font">
         <div class="container px-5 py-24 mx-auto">
             <div class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
@@ -424,22 +437,20 @@
                         d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z">
                     </path>
                 </svg>
-                <p class="leading-relaxed text-lg">Edison bulb retro cloud bread echo park, helvetica stumptown taiyaki
-                    taxidermy 90's cronut +1 kinfolk. Single-origin coffee ennui shaman taiyaki vape DIY tote bag
-                    drinking vinegar cronut adaptogen squid fanny pack vaporware. Man bun next level coloring book
-                    skateboard four loko knausgaard. Kitsch keffiyeh master cleanse direct trade indigo juice before
-                    they sold out gentrify plaid gastropub normcore XOXO 90's pickled cindigo jean shorts. Slow-carb
-                    next level shoindigoitch ethical authentic, yr scenester sriracha forage franzen organic drinking
-                    vinegar.</p>
+                <p class="leading-relaxed text-lg">“What we know is a drop, what we don't know is an ocean. Gravity
+                    explains the motions of the planets, but it cannot explain who sets the planets in motion. Truth
+                    is ever to be found in the simplicity, and not in the multiplicity and confusion of things. No
+                    great discovery was ever made without a bold guess. To any action there is always an opposite and
+                    equal reaction.”</p>
                 <span class="inline-block h-1 w-10 rounded bg-green-500 mt-8 mb-6"></span>
-                <h2 class="text-white font-medium title-font tracking-wider text-sm">HOLDEN CAULFIELD</h2>
-                <p class="text-gray-500">Senior Product Designer</p>
+                <h2 class="text-white font-medium title-font tracking-wider text-sm">ISSAC NEWTON</h2>
+                <p class="text-gray-500">Author of The Pincipia</p>
             </div>
         </div>
     </section>
 
     <!-- FOOTER -->
-    <footer class="text-gray-400 bg-gray-900 body-font">
+    <footer data-aos="fade-up" class="text-gray-400 bg-gray-900 body-font">
         <div
             class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
             <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left md:mt-0 mt-10">
@@ -565,6 +576,17 @@
             </div>
         </div>
     </footer>
+
+
+
+    <!-- animation library -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 70,
+            duration: 850,
+        });
+    </script>
 
 </body>
 
